@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head>
+<title>Your Name</title>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+<style type="text/css">
+
+#navbar-iframe {
+height:0px;
+visibility:hidden;
+display:none
+}
+	body {
+		background: #ffffff url('none');
+		font-family: "Droid Serif";
+ 		font-size: 11px;
+		color: #343434;
+		-webkit-text-stroke: 1px transparent;
+		-moz-text-stroke: 1px transparent;
+		-o-text-stroke: 1px transparent;
+		word-wrap: break-word;
+	}
+
+	a, a:link, a:active, a:visited {
+		color: #343434;
+		text-decoration: none!important;
+		-webkit-transition: color 1.5s linear;
+		-moz-transition: color 1.5s linear;
+		-o-transition: color 1.5s linear;
+		transition: color 1.5s linear;
+	}
+	a:hover {
+		color: #343434;
+		background: #ffff00;
+		-webkit-transition: color .1s linear;
+		-moz-transition: color .1s linear;
+		-o-transition: color .1s linear;
+		transition: color .1s linear;
+	}
+	img, a img {
+		border: 0;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+		-webkit-transition: opacity 1.5s linear;
+		-moz-transition: opacity 1.5s linear;
+		-o-transition: opacity 1.5s linear;
+		transition: opacity 1.5s linear;
+	}
+	img:hover, a:hover img {
+		background: none!important;
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transition: opacity .1s linear;
+		-moz-transition: opacity 1.5s linear;
+		-o-transition: opacity .1s linear;
+		transition: opacity .1s linear;
+	}
+	blockquote {
+		margin: 5px 0 0 11px;
+		padding-left: 10px;
+		border-left: 20px;
+	}
+	blockquote img, blockquote a img {
+		max-width: 490px;
+	}
+	p {
+		padding-top: 5px;
+	}
+	ol, ul {
+		padding: 5px 0 0 25px;
+	}
+	
+	ol {
+		list-style-type: decimal;
+	}
+	blockquote p:first-child, blockquote ul:first-child, blockquote ol:first-child, .body p:first-child, .body ul:first-child, .body ol:first-child {
+		padding-top: 0;
+	}
+	ul ul, ul ol, ol ol, ol ul {
+		padding-bottom: 5px;
+	}
+	blockquote p:first-child, blockquote ul:first-child, blockquote ol:first-child {
+		padding-top: 0;
+	}
+
+	#container {
+		margin: auto;
+		padding: 0px;
+	}
+	#content {
+		margin: 0 auto 25px;
+		width: 975px;
+		height: 100%;
+		padding: 0;
+	}
+
+	h1, h2, h1 a, h2 a {
+		font-family: "Droid Serif";
+		font-weight: bold;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	h1, h1 a {
+		font-size: 25px;
+		color: #343434!;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	h3 {
+		font: italic bold 17px "Droid Serif";
+	}
+	
+	h4 {
+		font-size: 12px;
+        font-family: "Droid Serif";
+		padding: 5px;
+		background: #eeeeee;
+	}
+	h4 a {
+		background: #eeeeee;
+	}
+	h4 a:hover {
+		background: #ffff00;
+	}
+
+	#sidebar {
+		
+		position: fixed;
+        margin-left: 1025px;
+		width: 250px;
+		float: right;
+	}
+
+	input {
+		margin-top: 8px;
+		padding: 2px 4px;
+		width: 100%;
+		border: 0;
+		background: #eeeeee;
+		font: 11px Helvetica;
+		color: #343434;
+		-webkit-text-stroke: 1px transparent;
+		-moz-text-stroke: 1px transparent;
+		-o-text-stroke: 1px transparent;
+        }
+
+
+	#pages {
+		margin-left: 40px;
+		padding: 0;
+		list-style-type: none;
+	}
+
+
+	.page {
+		font-weight: bold;
+	}
+
+	#pag {
+		margin-top: 8px; text-align: center;
+	}
+
+	#current, #pag a {
+		padding: 0 2px;
+	}
+
+	.results {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	.results h3, .results a {
+		color: #909090;
+		font-size: 15px!important;
+	}
+
+	.post {
+		margin-bottom: 25px;
+	}
+	
+	
+	.date {
+		margin-top: 5px;
+		text-transform: uppercase;
+	}
+	.date, .date a, #pag, #current, #pag .center a {
+		font: 10px "Droid Serif";;
+		color: #343434;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	.date a:hover, #pag a:hover, #footer a:hover {
+		color: #343434;
+	}
+	#comments {
+		margin-top: 25px;
+	}
+	#comments ol {
+		padding: 0;
+		list-style-type: none;
+	}
+	#comments li {
+		margin-bottom: 10px;
+	}
+
+        #main {
+             width: 700px;
+             position: absolute;
+             font: 12px "Droid Serif";
+	     text-align: justify;
+ 	     padding-bottom:25px;
+	     padding-top: 30px;
+	}
+
+
+#footer {
+		text-align: center;
+		margin-top: 8px;
+	}
+	#footer p {
+		padding-top: 3px!important;
+	}
+	#footer, #footer a {
+		font: 12px "Droid-Serif";
+		color: #909090;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+
+</style>
+</head>
+
+<body>
+<div id="container">
+<div id="content">
+
+		<div id="main">
+<BLOGGER>
+<h2>4</h2>
+<p>
+    Your Name
+    <br><br>
+<blockquote><strong>
+    A hundred people know your name. About six know you're hanging by a thread. A thousand see you break in the bus, in the pharmacy with a coffee spill on your blouse - they do not know your name but know everything else. Your shadow smears the pavement. Your exhale lingers between branches, within leaves. Everyday you swallow whole chunks of the sun recall the yellow morning froth seeping in through the curtain? you cannot wring your skin dry. the moon writes you love letter - see the cursive motion of the tides? your presence may be forgotten but it cannot absence.
+</strong></blockquote><br>
+
+<b><i>Summary:</i></b>
+<br><br>
+The poem poetically captures the essence of being seen yet unseen, known yet unknown, in the midst of everyday life and natural surroundings. It suggests that while our presence may fade from memory, our impact cannot be erased, echoing the enduring influence of our existence.
+<br><br>
+<b><i>Explanation:</i></b>
+<br><br>
+The poem explores the contrast between how people are known or seen by others versus the deeper, more personal experiences and struggles they face internally. It highlights the dichotomy between public perception and private reality.<br><br>
+<b><i>Notes:</i></b>
+<br><br>
+<ul>
+<li><b>Visibility vs. Invisibility:</b><br>The poem discusses how many people may know your name or recognize you superficially, but very few understand your true emotional state or the challenges you face.</li><br><br>
+<li><b>Daily Life:</b><br>It touches on mundane yet significant moments like spilling coffee or experiencing personal struggles in public spaces, contrasting them with the anonymity of the individual involved.</li><br><br>
+<li><b>Nature Imagery:</b><br>The use of natural elements like shadows, breath, sun, and moon evokes a sense of connection between personal experiences and the larger universe.</li>
+</ul>
+</div>
+</div>
+</BLOGGER>
+	</div>
+
+
+	<div id="sidebar">
+		<h1>Blogs</h1>
+		<ul id="pages">
+            <li><a href="../index.html">Home</a>
+            <li><a href="../Daily.html">Daily</a>
+            <li><a href="../Blogs.html">Blogs</a>
+            <li><a href="../Archive.html">Archive</a>
+            <li><a href="../Gallery.html">Gallery</a></li>
+		</ul>
+			
+<div id="pag">
+	<OlderPosts><a href="/Blogs/3.html"><b>Older Posts ←</b></OlderPosts>
+	<NewerPosts><a href="/Blogs/5.html"><b>→ Newer Post</b></NewerPosts>
+</div>
+<div class="clear"></div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+</div> 
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>

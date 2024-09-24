@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head>
+<title>Life</title>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+<style type="text/css">
+
+#navbar-iframe {
+height:0px;
+visibility:hidden;
+display:none
+}
+	body {
+		background: #ffffff url('none');
+		font-family: "Droid Serif";
+ 		font-size: 11px;
+		color: #343434;
+		-webkit-text-stroke: 1px transparent;
+		-moz-text-stroke: 1px transparent;
+		-o-text-stroke: 1px transparent;
+		word-wrap: break-word;
+	}
+
+	a, a:link, a:active, a:visited {
+		color: #343434;
+		text-decoration: none!important;
+		-webkit-transition: color 1.5s linear;
+		-moz-transition: color 1.5s linear;
+		-o-transition: color 1.5s linear;
+		transition: color 1.5s linear;
+	}
+	a:hover {
+		color: #343434;
+		background: #ffff00;
+		-webkit-transition: color .1s linear;
+		-moz-transition: color .1s linear;
+		-o-transition: color .1s linear;
+		transition: color .1s linear;
+	}
+	img, a img {
+		border: 0;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+		-webkit-transition: opacity 1.5s linear;
+		-moz-transition: opacity 1.5s linear;
+		-o-transition: opacity 1.5s linear;
+		transition: opacity 1.5s linear;
+	}
+	img:hover, a:hover img {
+		background: none!important;
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transition: opacity .1s linear;
+		-moz-transition: opacity 1.5s linear;
+		-o-transition: opacity .1s linear;
+		transition: opacity .1s linear;
+	}
+	blockquote {
+		margin: 5px 0 0 11px;
+		padding-left: 10px;
+		border-left: 20px;
+	}
+	blockquote img, blockquote a img {
+		max-width: 490px;
+	}
+	p {
+		padding-top: 5px;
+	}
+	ol, ul {
+		padding: 5px 0 0 25px;
+	}
+	
+	ol {
+		list-style-type: decimal;
+	}
+	blockquote p:first-child, blockquote ul:first-child, blockquote ol:first-child, .body p:first-child, .body ul:first-child, .body ol:first-child {
+		padding-top: 0;
+	}
+	ul ul, ul ol, ol ol, ol ul {
+		padding-bottom: 5px;
+	}
+	blockquote p:first-child, blockquote ul:first-child, blockquote ol:first-child {
+		padding-top: 0;
+	}
+
+	#container {
+		margin: auto;
+		padding: 0px;
+	}
+	#content {
+		margin: 0 auto 25px;
+		width: 975px;
+		height: 100%;
+		padding: 0;
+	}
+
+	h1, h2, h1 a, h2 a {
+		font-family: "Droid Serif";
+		font-weight: bold;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	h1, h1 a {
+		font-size: 25px;
+		color: #343434!;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	h3 {
+		font: italic bold 17px "Droid Serif";
+	}
+	
+	h4 {
+		font-size: 12px;
+        font-family: "Droid Serif";
+		padding: 5px;
+		background: #eeeeee;
+	}
+	h4 a {
+		background: #eeeeee;
+	}
+	h4 a:hover {
+		background: #ffff00;
+	}
+
+	#sidebar {
+		
+		position: fixed;
+        margin-left: 1025px;
+		width: 250px;
+		float: right;
+	}
+
+	input {
+		margin-top: 8px;
+		padding: 2px 4px;
+		width: 100%;
+		border: 0;
+		background: #eeeeee;
+		font: 11px Helvetica;
+		color: #343434;
+		-webkit-text-stroke: 1px transparent;
+		-moz-text-stroke: 1px transparent;
+		-o-text-stroke: 1px transparent;
+        }
+
+
+	#pages {
+		margin-left: 40px;
+		padding: 0;
+		list-style-type: none;
+	}
+
+
+	.page {
+		font-weight: bold;
+	}
+
+	#pag {
+		margin-top: 8px; text-align: center;
+	}
+
+	#current, #pag a {
+		padding: 0 2px;
+	}
+
+	.results {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	.results h3, .results a {
+		color: #909090;
+		font-size: 15px!important;
+	}
+
+	.post {
+		margin-bottom: 25px;
+	}
+	
+	
+	.date {
+		margin-top: 5px;
+		text-transform: uppercase;
+	}
+	.date, .date a, #pag, #current, #pag .center a {
+		font: 10px "Droid Serif";;
+		color: #343434;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	.date a:hover, #pag a:hover, #footer a:hover {
+		color: #343434;
+	}
+	#comments {
+		margin-top: 25px;
+	}
+	#comments ol {
+		padding: 0;
+		list-style-type: none;
+	}
+	#comments li {
+		margin-bottom: 10px;
+	}
+
+        #main {
+        width: 700px;
+        position: absolute;
+        font: 12px "Droid Serif";
+	    text-align: justify;
+ 	    padding-bottom:25px;
+	    padding-top: 30px;
+	}
+
+
+#footer {
+		text-align: center;
+		margin-top: 8px;
+	}
+	#footer p {
+		padding-top: 3px!important;
+	}
+	#footer, #footer a {
+		font: 12px "Droid-Serif";
+		color: #909090;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+
+</style>
+</head>
+
+<body>
+<div id="container">
+<div id="content">
+
+		<div id="main">
+<BLOGGER>
+<h2>3</h2>
+<p>
+    Life
+    <br><br>
+<blockquote><strong>
+    Today felt ordinary, just another day of twenty-four hours marked by bits of sunshine and rain. Yet, in the midst of this normalcy, ambition, restless and uneasy, nudged me to get moving. It urged me to be productive, to chase goals and dreams.
+    However, I found myself in a different place, nestled in the mossy shadows under the trees. There was a truth I couldn’t ignore: I didn’t want to let go of the comforting embrace of idleness. The thought of trading my life for money felt wrong. I didn’t even feel the need to seek shelter from the rain. In that serene, natural setting, I found a sense of peace that ambition couldn't offer.
+</strong></blockquote><br>
+
+<b><i>Summary:</i></b>
+<br><br>
+Mary Oliver’s "Black Oaks" captures a moment of reflection where the speaker confronts the pressure to be ambitious and productive but ultimately chooses to embrace the tranquility and contentment found in idleness and nature. This introspection highlights a personal preference for peace over the relentless pursuit of success.
+<br><br>
+<b><i>Notes:</i></b>
+<br><br>
+<ul>
+<ol><b>Ambition vs. Idleness</b>:<br> This passage explores the tension between the drive to be productive and the desire to simply exist and enjoy the moment.</ol><br>
+<ol><b> As Refuge:</b><br> The natural setting is portrayed as a comforting, almost sacred space that contrasts with the pressures of societal expectations.</ol><br>
+<ol><b>Personal Reflection:</b><br> There’s a personal revelation about the value of time and life beyond just productivity and financial gain.</ol><br>
+</ul>
+<br><br>
+</p>
+</div>
+</div>
+</BLOGGER>
+	</div>
+	<div id="sidebar">
+		<h1>Blogs</h1>
+	        
+
+		<ul id="pages">
+            <li><a href="../index.html">Home</a>
+                <li><a href="../Daily.html">Daily</a>
+                <li><a href="../Blogs.html">Blogs</a>
+                <li><a href="../Archive.html">Archive</a>
+                <li><a href="../Gallery.html">Gallery</a></li>
+		</ul>
+			
+<div id="pag">
+					<OlderPosts><a href="/Blogs/2.html"><b>Older Posts ←</b></OlderPosts>
+					<NewerPosts><a href="/Blogs/4.html"><b>→ Newer Post</b></NewerPosts>
+
+</div>
+<div class="clear"></div>
+
+			
+			<div class="clear"></div>
+
+	</div>
+
+<div class="clear"></div>
+</div>
+</div> 
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
